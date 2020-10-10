@@ -1,3 +1,8 @@
+remotes::install_github("tvercrobbie/ALERC")
+library(ALERC)
+
+
+
 myshape <- st_read(system.file("shape/nc.shp", package = "sf"))
 
 bboxplus <- st_bbox(st_buffer(mp, 10))
