@@ -1,0 +1,17 @@
+#' Function for reading a png as a raster
+#' @param filename the  filename of the png file
+#' @keywords png, mapping, ggplot
+#' @export
+#' @examples
+#' logo <- get_png(system.file("data/records.xlsx", package = "ALERC"))
+#' library(sf)
+#' myshape <- st_read(system.file("data/BerksOxon.shp", package = "ALERC"))
+#' ggplot(myshape, aes(col = County)) +
+#' geom_sf() +
+#' coord_sf(datum = 27700) +
+#' annotation_custom(logo, xmin = bbox[3]-300, xmax = bbox[3], ymin = bbox[4]+10, ymax = bbox[4]+300) +
+#' theme_tverc()
+
+get_png <- function(filename) {
+  grid::rasterGrob(png::readPNG(filename), interpolate = TRUE)
+}

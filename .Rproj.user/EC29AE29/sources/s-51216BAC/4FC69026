@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1602347858798.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4171580583",
+    "id" : "4FC69026",
+    "lastKnownWriteTime" : 1547556313,
+    "last_content_update" : 1547556313,
+    "path" : "G:/Data/R/ALERC/R/EN2OS.R",
+    "project_path" : "R/EN2OS.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

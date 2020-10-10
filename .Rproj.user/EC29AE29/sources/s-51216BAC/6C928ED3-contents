@@ -5,9 +5,16 @@ devtools::install_github("tvercrobbie/ALERC")
 library(ALERC)
 
 library(sf)
-
+logo <- get_png(system.file("data/TVERC_logo", package = "ALERC"))
+myshape <- st_read(system.file("data/BerksOxon.shp", package = "ALERC"))
+ggplot(myshape, aes(col = County)) +
+  geom_sf() +
+  coord_sf(datum = 27700) +
+  annotation_custom(logo, xmin = bbox[3]-300, xmax = bbox[3], ymin = bbox[4]+10, ymax = bbox[4]+300) +
+  theme_tverc()
 
 
 
 
 devtools::document()
+
