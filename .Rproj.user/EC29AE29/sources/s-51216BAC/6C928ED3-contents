@@ -3,11 +3,12 @@ detach("package:ALERC", unload = TRUE)
 remove.packages("ALERC")
 devtools::install_github("tvercrobbie/ALERC")
 library(ALERC)
-library(sf)
-myshape <- st_read(system.file("data/BerksOxon.shp", package = "ALERC")) %>% 
-  st_set_crs(27700)
 
-records <- read.csv("https://raw.githubusercontent.com/tvercrobbie/ALERC/master/data/records.csv")
+library(sf)
+records <- readxl::read_excel(system.file("data/records.xlsx", package = "ALERC")) %>% 
+  st_as_sf(coords = c("Easting", "Northing"), crs = 27700)
 
 sssi <- st_read(system.file("data/SSSI.shp", package = "ALERC")) %>% 
   st_set_crs(27700)
+
+records$DistFromSSSI <- st_min_dist(records, sssi)

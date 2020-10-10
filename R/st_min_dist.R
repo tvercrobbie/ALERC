@@ -1,5 +1,5 @@
 #' Function for creating a numeric vector showing the smallest distance between the
-#' polygon in the primary sf object and all polygons in the second object
+#' feature in the primary sf object and all polygons in the second object
 #' @param x the primary sf object
 #' @param y the second sf object
 #' @keywords eucledian distance, sf, spatial, polygons
@@ -10,7 +10,7 @@
 #' records <- OS2POLY(records)
 #' records$distance <- edist(records, lws)
 #'
-edist <- function(x, y){
+st_min_dist <- function(x, y){
   library(sf)
   library(dplyr)
 index <- st_nearest_feature(x, y)

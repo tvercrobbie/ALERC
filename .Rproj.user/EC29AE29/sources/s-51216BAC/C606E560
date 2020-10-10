@@ -7,12 +7,12 @@
     "folds" : "",
     "hash" : "0",
     "id" : "C606E560",
-    "lastKnownWriteTime" : 1581081842,
-    "last_content_update" : 1581081842,
-    "path" : "G:/Data/R/ALERC/R/edist.R",
-    "project_path" : "R/edist.R",
+    "lastKnownWriteTime" : 1602346730,
+    "last_content_update" : 1602346734550,
+    "path" : "G:/Data/R/ALERC/R/st_min_dist.R",
+    "project_path" : "R/st_min_dist.R",
     "properties" : {
-        "cursorPosition" : "20,0",
+        "cursorPosition" : "18,1",
         "scrollLine" : "0"
     },
     "read_only" : false,
