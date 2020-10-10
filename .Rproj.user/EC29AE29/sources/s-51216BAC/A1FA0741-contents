@@ -5,7 +5,7 @@ myshape <- st_read(system.file("data/TwoCounties_region.shp", package = "ALERC")
   st_set_crs(27700)
 
 bboxplus <- st_bbox(st_buffer(myshape, 100))
-dots <- dot(myshape, den = 200, custom_bbox = bboxplus)
+dots <- st_dot(myshape, den = 200, custom_bbox = bboxplus)
 
 library(ggplot2)
 ggplot(myshape, aes(col = COUNTYNAME)) +
