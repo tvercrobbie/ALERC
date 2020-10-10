@@ -13,8 +13,15 @@ get_png(filename)
 Function for reading a png as a raster
 }
 \examples{
-logo <- get_png("G:/Logo.png")
-
+library(sf)
+logo <- get_png(system.file("data/TVERC_logo.png", package = "ALERC"))
+myshape <- st_read(system.file("data/BerksOxon.shp", package = "ALERC"))
+library(ggplot2)
+ggplot(myshape) +
+  geom_sf() +
+  coord_sf(datum = 27700) +
+  annotation_custom(logo, xmin = 470000, xmax = 504000, ymin = 240000, ymax = Inf) +
+  theme_tverc()
 }
 \keyword{ggplot}
 \keyword{mapping,}
