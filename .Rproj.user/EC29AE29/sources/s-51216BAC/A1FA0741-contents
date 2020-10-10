@@ -1,0 +1,7 @@
+myshape <- st_read(system.file("shape/nc.shp", package = "sf"))
+
+bboxplus <- st_bbox(st_buffer(mp, 10))
+dots <- dot(mp, den = 2000, custom_bbox = bboxplus)
+
+library(ggplot2)
+plot(st_geometry(dots))

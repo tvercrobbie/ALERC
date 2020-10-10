@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1602326721692.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "968066797",
+    "id" : "C606E560",
+    "lastKnownWriteTime" : 1581081842,
+    "last_content_update" : 1581081842,
+    "path" : "G:/Data/R/ALERC/R/edist.R",
+    "project_path" : "R/edist.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

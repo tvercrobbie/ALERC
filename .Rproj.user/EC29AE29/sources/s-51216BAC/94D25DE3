@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1602331832147.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "94D25DE3",
+    "lastKnownWriteTime" : 2308706344526624056,
+    "last_content_update" : 1602331832147,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "A4DC3D05",
+        "caption" : "myshape",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=myshape&cache_key=A4DC3D05",
+        "displayedObservations" : 100,
+        "environment" : "",
+        "expression" : "myshape",
+        "object" : "myshape",
+        "preview" : 0,
+        "totalObservations" : 100,
+        "variables" : 15
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
