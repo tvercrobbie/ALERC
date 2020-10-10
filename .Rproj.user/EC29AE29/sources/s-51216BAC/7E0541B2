@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1602326138454.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3850305950",
     "id" : "7E0541B2",
-    "lastKnownWriteTime" : 1602331153,
-    "last_content_update" : 1602331395600,
+    "lastKnownWriteTime" : 1602333802,
+    "last_content_update" : 1602333803234,
     "path" : "G:/Data/R/ALERC/R/dot.R",
     "project_path" : "R/dot.R",
     "properties" : {
-        "cursorPosition" : "12,30",
-        "scrollLine" : "0"
+        "cursorPosition" : "15,14",
+        "scrollLine" : "6"
     },
     "read_only" : false,
     "read_only_alternatives" : [

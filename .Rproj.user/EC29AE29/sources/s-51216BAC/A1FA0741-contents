@@ -1,12 +1,14 @@
 remotes::install_github("tvercrobbie/ALERC")
 library(ALERC)
+library(sf)
+myshape <- st_read(system.file("data/TwoCounties_region.shp", package = "ALERC")) %>% 
+  st_set_crs(27700)
 
-
-
-myshape <- st_read(system.file("shape/nc.shp", package = "sf"))
-
-bboxplus <- st_bbox(st_buffer(mp, 10))
-dots <- dot(mp, den = 2000, custom_bbox = bboxplus)
+bboxplus <- st_bbox(st_buffer(myshape, 100))
+dots <- dot(myshape, den = 200, custom_bbox = bboxplus)
 
 library(ggplot2)
-plot(st_geometry(dots))
+ggplot(myshape, aes(col = COUNTYNAME)) +
+  geom_sf() +
+  geom_sf(data = dots, aes(col = COUNTYNAME)) +
+  coord_sf(datum = 27700)
