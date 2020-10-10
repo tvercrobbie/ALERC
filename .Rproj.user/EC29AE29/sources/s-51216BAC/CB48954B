@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1602342153653.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CB48954B",
+    "lastKnownWriteTime" : 1602342299,
+    "last_content_update" : 1602342301032,
+    "path" : "G:/Data/R/ALERC/R/theme_tverc.R",
+    "project_path" : "R/theme_tverc.R",
+    "properties" : {
+        "cursorPosition" : "7,14",
+        "scrollLine" : "0",
+        "tempName" : "Untitled3"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

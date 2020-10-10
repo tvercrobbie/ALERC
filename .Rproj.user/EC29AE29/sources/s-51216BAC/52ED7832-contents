@@ -12,7 +12,7 @@ ggplot(myshape, aes(col = County)) +
 
 
 theme_tverc <- function(){
-  theme_bw() + 
+  theme_bw() %+replace%
   theme(legend.position = "bottom", 
         axis.title.x=element_blank(), 
         axis.text.x=element_blank(),
