@@ -5,10 +5,9 @@ devtools::install_github("tvercrobbie/ALERC")
 library(ALERC)
 
 library(sf)
-records <- readxl::read_excel(system.file("data/records.xlsx", package = "ALERC")) %>% 
-  st_as_sf(coords = c("Easting", "Northing"), crs = 27700)
 
-sssi <- st_read(system.file("data/SSSI.shp", package = "ALERC")) %>% 
-  st_set_crs(27700)
 
-records$DistFromSSSI <- st_min_dist(records, sssi)
+
+
+
+devtools::document()
