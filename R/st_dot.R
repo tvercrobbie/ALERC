@@ -18,7 +18,7 @@
 #' coord_sf(datum = 27700)
 
 
-dot <- function(x, custom_bbox = NULL, den = 4000){
+st_dot <- function(x, custom_bbox = NULL, den = 4000){
   library(sf)
   library(dplyr)
   if(is.null(custom_bbox)){
