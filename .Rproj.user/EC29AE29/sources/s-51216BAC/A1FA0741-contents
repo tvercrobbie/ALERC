@@ -1,4 +1,4 @@
-remotes::install_github("tvercrobbie/ALERC")
+devtools::install_github("tvercrobbie/ALERC")
 library(ALERC)
 library(sf)
 myshape <- st_read(system.file("data/TwoCounties_region.shp", package = "ALERC")) %>% 

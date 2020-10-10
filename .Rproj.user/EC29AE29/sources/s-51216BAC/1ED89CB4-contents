@@ -1,7 +1,7 @@
 Package: ALERC
 Type: Package
 Title: A Collection Of Functions for Local Environmental Record Centre Work.
-Version: 0.1.0
+Version: 0.1.1
 Author: Robbie Still, Katherine Lister
 Maintainer: Robbie Still <robbie.still@oxfordshire.gov.uk>
 Description: A collection of spatial and analytical functions that prove useful in LERC work.
