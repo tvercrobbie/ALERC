@@ -8,7 +8,7 @@
 #' @export
 #' @examples
 #' library(sf)
-#' myshape <- st_read(system.file("data/TwoCounties_region.shp", package = "ALERC"))
+#' myshape <- st_read(system.file("data/BerksOxon.shp", package = "ALERC"))
 #' bboxplus <- st_bbox(st_buffer(myshape, 100))
 #' dots <- st_dot(myshape, den = 200, custom_bbox = bboxplus)
 #' library(ggplot2)

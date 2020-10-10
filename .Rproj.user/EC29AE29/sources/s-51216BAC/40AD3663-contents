@@ -1,0 +1,20 @@
+#' Update the TVERC package
+#'
+#' This function creates updates the TVERC package.
+#' @export
+#' @examples
+#' update_tverc()
+
+update_tverc <- function(){
+library(devtools)
+library(roxygen2)
+ogwd <- getwd()
+setwd("G:/Data search/R/TVERC/")
+document()
+setwd("G:/Data search/R/")
+detach("package:TVERC", unload = TRUE)
+remove.packages("TVERC")
+install("TVERC")
+library(TVERC)
+setwd(ogwd)
+}

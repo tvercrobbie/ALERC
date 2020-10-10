@@ -1,7 +1,8 @@
+detach("package:ALERC", unload = TRUE)
 devtools::install_github("tvercrobbie/ALERC")
 library(ALERC)
 library(sf)
-myshape <- st_read(system.file("data/TwoCounties_region.shp", package = "ALERC")) %>% 
+myshape <- st_read(system.file("data/BerksOxon.shp", package = "ALERC")) %>% 
   st_set_crs(27700)
 
 bboxplus <- st_bbox(st_buffer(myshape, 100))
@@ -12,3 +13,5 @@ ggplot(myshape, aes(col = COUNTYNAME)) +
   geom_sf() +
   geom_sf(data = dots, aes(col = COUNTYNAME)) +
   coord_sf(datum = 27700)
+
+st_write(st_zm(myshape), "data/BerksOxon.shp")
