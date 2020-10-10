@@ -8,3 +8,4 @@ Description: A collection of spatial and analytical functions that prove useful 
 License: CC-BY-NC
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.0
