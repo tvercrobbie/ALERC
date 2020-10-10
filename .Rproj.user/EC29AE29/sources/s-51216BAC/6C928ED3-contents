@@ -1,13 +1,13 @@
 remove.packages("ALERC", lib="~/R/win-library/3.6")
 detach("package:ALERC", unload = TRUE)
-remove.packages("TVERC")
+remove.packages("ALERC")
 devtools::install_github("tvercrobbie/ALERC")
 library(ALERC)
 library(sf)
 myshape <- st_read(system.file("data/BerksOxon.shp", package = "ALERC")) %>% 
   st_set_crs(27700)
 
-records <- read.csv(system.file("data/records.csv", package = "ALERC"))
+records <- read.csv("https://raw.githubusercontent.com/tvercrobbie/ALERC/master/data/records.csv")
 
 sssi <- st_read(system.file("data/SSSI.shp", package = "ALERC")) %>% 
   st_set_crs(27700)
