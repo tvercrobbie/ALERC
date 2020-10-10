@@ -18,3 +18,23 @@ ggplot(myshape, aes(col = County)) +
   coord_sf(datum = 2770) + 
   theme_tverc()
 
+x <- st_read("G:/Data/Data to Use/Sites/regional and national/SSSIs/Current/Sites_of_Special_Scientific_Interest_England.shp") %>% 
+  st_make_valid() %>% 
+  st_set_crs(27700) %>% 
+  st_crop(myshape) %>% 
+  select(Name = SSSI_NAME) %>% 
+  head(100)
+
+st_write(x, "data/SSSI.shp", delete_layer = T)
+
+x <- read.csv("G:/Data/Data under process/Online Data Wrangling/iRecord/processed irecord data/General pot.csv") %>% 
+  select(Species.Name, GridRef) %>% 
+  head(100)
+
+y <- OS2EN(x$GridRef)
+
+x$Easting <- y$Easting
+x$Northing <- y$Northing
+
+write.csv(x, "data/records.csv")
+
